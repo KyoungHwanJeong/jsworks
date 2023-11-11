@@ -7,8 +7,12 @@
   <script>
     // 순위에 따른 메달 출력
     // let rank = 1;
-    let rank = parseInt(prompt("순위 입력: "));
+    // let rank = prompt("순위 입력: ");
     // rank = parseInt(rank);
+    // rank를 int형으로 바꿔주지 않으면 값이 문자형이므로 switch문은 동작하지 않고
+    // if문에서 == 는 문자열을 비교하므로 동작한다.
+    let rank = parseInt(prompt("순위 입력: "));
+    
     switch(rank){
       case 1: // 정수 1
         document.write("금메달입니다.<br>"); break;
@@ -19,6 +23,7 @@
       default:
         document.write("메달이 없습니다.<br>"); break;
     }
+    
 
     // if문을 사용하여 다시 작성하기
     if(rank === 1){

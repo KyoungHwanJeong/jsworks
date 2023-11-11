@@ -5,6 +5,7 @@
   다른 키면 "잘못 눌렀습니다"
 */
 while(true){
+  // let key = 'y';
   let key = prompt("계속 반복할까요?", "y/n");
   if(key == 'y' || key == 'Y'){
     alert("계속 반복합니다.");
