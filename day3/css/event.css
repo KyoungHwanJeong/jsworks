@@ -1,0 +1,14 @@
+/* event.css */
+@charset "utf-8";
+
+#item{
+  width: 500px;
+  margin: 40px;
+  position: relative;
+}
+.btn_show{
+  position: absolute;
+  top: 260px; left: 20px;
+}
+.text{width: 400px; line-height: 1.5;
+        text-align: justify;}

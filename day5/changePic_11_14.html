@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <img src="images/cup-1.png" alt="차잔" id="pic"
+          onmouseover="changePic()" onmouseout="orignPic()">
+  </div>
+
+  <script>
+    let img = document.querySelector("#pic");
+
+    //마우스를 객체에 올렸을때 이벤트가 발생한다
+    function changePic(){
+      img.src = "images/cup-2.png";
+    }
+     
+    //마우스가 객체를 벗어났을때 이벤트가 발생한다
+    function orignPic(){
+      img.src = "images/cup-1.png";
+    }
+  </script>
+</body>
+</html>

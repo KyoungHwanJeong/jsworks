@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4의 배수 만들기</title>
+</head>
+<body>
+  
+  <script>
+
+    // let x= 20;
+    let x = prompt("숫자를 입력해주세요..", "1000");
+    // x = parseInt(num);
+    times(x);
+    function times(x){
+      if(x % 4 === 0){
+        console.log(x +" 는 4의 배수입니다.");
+      }else{    // !== 0 : 0 이 아니다, 부정하기
+        console.log(x +" 는 4의 배수가 아닙니다.");
+      }
+    }
+  </script>
+</body>
+</html>
