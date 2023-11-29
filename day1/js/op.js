@@ -24,10 +24,10 @@ result = num1 > num2;
 console.log(result);          // true
 console.log(typeof(result));  // boolean
 
-result = num1 == num2;        // false
+result = (num1 == num2);        // false
 console.log(result);
 
-result = num1 != num2;        // true
+result = num1 !== num2;        // true
 console.log(result);
 
 // 논리 연산
@@ -35,6 +35,7 @@ console.log(result);
 result = (num1 == num2) && (num1 >= num2);  // false
 console.log(result);
 
+// 논리 합 - or
 result = (num1 == num2) || (num1 >= num2);  // true
 console.log(result);
 

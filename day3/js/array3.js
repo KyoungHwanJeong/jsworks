@@ -21,7 +21,7 @@ for(let i = 0; i < number.length; i++){
 }
 
 /*
-for(let i in number){
+for(let num in number){
   document.write(number[num] + " ");
 }
 */
@@ -37,20 +37,20 @@ let ch = 'A';
 // console.log(ch.charCodeAt(0));
 ch = ch.charCodeAt(0);  // 코드값(65)으로 다시 저장
 
+//저장
 for(let i=0; i<alphabet.length; i++){
   alphabet[i] = ch; // ch = 65;
   ch++;             // ch = ch + 1;
   // console.log(ch);
-  console.log(i);
+  console.log(alphabet[i]);
 }
 
 console.log("");
-for(let i; i <=number.length; i++){
-  console.log(i);
+for(let i=0; i <= alphabet.length; i++){
+  console.log(alphabet[i]);
 }
 
 //출력
-
 for(let i=0; i<alphabet.length; i++){
   console.log(alphabet[i] + ", " +
               String.fromCharCode(alphabet[i]));

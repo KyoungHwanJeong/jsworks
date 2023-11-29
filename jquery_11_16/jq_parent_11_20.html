@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위치 기반 탐색</title>
+  <script src="js/jquery-3.7.1.js"></script>
+  <style>
+    .content{width: 800px; margin: 0 auto;}
+    /* .wrap, ul, li, span */
+    .wrap *{  /* .wrap, ul, li, span */
+      display: block;
+      border: 2px solid #ddd;
+      margin: 16px;
+      padding: 5px;
+      color: lightgray;
+    }
+  </style>
+  <script>
+    $(document).ready(function(){
+      //$("span").css("color", "red");
+      //$("span").parent().css({"color": "red"}); // 1개 넣을 때
+      
+      //span 태그의 부모요소
+      //글자 색은 빨간색이고 테두리(border) 속성은 2px 파란색으로
+      // $("span").parent().css({"color": "red", "border": "2px solid blue"});
+
+      //span 태그의 부모의 다음요소
+      // {"color": "red", "border": "2px solid blue"} : { } 안에 넣으면 자바 같이 객체가 된다
+      //$("span").parent().next().css({"color": "red", "border": "2px solid blue"});
+
+      //ul의 자식요소
+      $("ul").children().css("color", "pink");
+
+      //ul하위의 span태그 찾기
+      //ul에서 span 태그를 찾는 법 : find를 쓴다
+      $("ul").find("span").css({'color': 'blue', 'font-weight': 'bold'});
+    })
+  </script>
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <ul>ul (grandparent)
+        <li>li (direct parent)
+          <span>span</span>
+        </li>
+        <li>li (parent)</li>
+        <li>li (parent)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

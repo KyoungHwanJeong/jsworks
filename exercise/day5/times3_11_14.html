@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3의 배수 출력하기</title>
   <style>
-    #show{
-      color: red;
-    }
+    #show{color: red;}
+    body{text-align: center; line-height: 2;}
   </style>
 </head>
 <body>
   <p id="show"></p>
+  <h2>3의 배수 찾기</h2>
   <script>
-
   // let num = 50;       // 몇까지인지 변수에 할당
   let num = prompt("몇까지의 배수를 구할까요?", "1000");
-  let count = 0;
+  let count = 0;  //전역 변수
+
   if(num == null){
     document.write("입력이 취소되었습니다.");
   }else if(isNaN(num)){
@@ -25,8 +25,8 @@
       num = parseInt(num);  //입력 받은 문자를 숫자로 변환
       for(let i = 1; i <= num; i++){
       if(i % 3 == 0){
-        // document.write(i + ", ");
-        document.getElementById("show").innerHTML =  i + ", ";
+        document.write(i + ", ");
+        // document.getElementById("show").innerHTML =  i + ", ";
         count++;
       }
     }

@@ -15,13 +15,13 @@
     // join은 구분기호로 연결한다
     document.write(numbers.join('-') + '<br>');
     document.write(chars + '<br>');
-    document.write(chars.join(" : ") + '<br>');
+    document.write(chars.join(":") + '<br>');
 
     // concat은 numbers와 chars를 이어준다
     let list = numbers.concat(chars);
     document.write(list + '<br>');
     document.write(list.join(":") + '<br>');
-    document.write("=============================================");
+    document.write("=============================================<br>");
 
 
     //indexOf(문자열) : 문자열 - 1차원 배열
@@ -32,7 +32,7 @@
     let idx2 = str.indexOf("korea");
 
     document.write(idx1 + "<br>");
-    document.write(idx2 + "<br>");
+    document.write(idx2 + "<br>");  // 일치하지 않으므로 -1을 반환한다
 
     //lastIndexOf("문자열") - 문자열의 뒤에서 찾아서 위치 반환함
     let idx3 = str.lastIndexOf("world");

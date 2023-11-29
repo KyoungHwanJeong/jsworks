@@ -4,20 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4의 배수 만들기</title>
+  <style>
+    body{text-align: center;}
+  </style>
 </head>
 <body>
-  
+  <h2>4의 배수일까? 아닐까?</h2>
   <script>
 
-    // let x= 20;
-    let x = prompt("숫자를 입력해주세요..", "1000");
-    // x = parseInt(num);
-    times(x);
-    function times(x){
-      if(x % 4 === 0){
-        console.log(x +" 는 4의 배수입니다.");
+    // let n= 20;
+    let n = prompt("숫자를 입력해주세요..", "1000");
+    // n = parseInt(num);
+    times(n);
+    function times(n){
+      if(n % 4 === 0){
+        document.write(n + " 는 4의 배수입니다.");
       }else{    // !== 0 : 0 이 아니다, 부정하기
-        console.log(x +" 는 4의 배수가 아닙니다.");
+        document.write(n + " 는 4의 배수가 아닙니다.");
       }
     }
   </script>

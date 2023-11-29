@@ -1,0 +1,28 @@
+/* style.css */
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+#wrap{height: 2000px;}
+#up{
+  position: fixed;  /* 브라우저 기준 */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0; /* 완전히 투명하게 한다 */
+  transition: all 0.5s; /* 전체 지연시간 0.5초 */
+  visibility: hidden; /* TOP 메뉴를 숨긴다 */
+}
+#up.on{
+  opacity: 1; /* 완전 불투명(투명 -> 보이게) */
+  visibility: visible; 
+  /* 아래 스크롤 좌표가 100px이 넘어가면 
+  TOP 메뉴가 나타나게 한다 */
+}
+#up a{
+  display: block;
+  background-color: #333;
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}

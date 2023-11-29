@@ -16,7 +16,7 @@ let detail = document.querySelector("#detail"); //상세설명보기
 let sw = true;  //상태 변수 = 1
 
 //객체의 onclick 속성을 사용하여 구현
-view.onclick = function(){
+view.onclick = function(){          //실행 함수
   if(sw){
     detail.style.display="block";
     view.innerText = "상세 설명 닫기";
