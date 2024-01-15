@@ -7,8 +7,8 @@ function sayHello(){
 }
 
 // 매개 변수가 있는 함수
-function sayHello2(text){
-  document.write("안녕하세요~" + text + "<br>");
+function sayHello2(name){
+  document.write("안녕하세요~" + name + "<br>");
 }
 
 //구구단을 출력하는 함수 정의

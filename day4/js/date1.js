@@ -1,5 +1,5 @@
 // date1.js
-// Date 객체(날짜와 시간)
+// Date 객체(현재 날짜와 시간)
 
 const NOW = new Date();
 

@@ -17,5 +17,4 @@
     //텍스트는 숨기고, 보기 버튼은 보이기
     document.getElementById("detail").style.display = "none";
     document.getElementById("show").style.display = "block";
-
   }

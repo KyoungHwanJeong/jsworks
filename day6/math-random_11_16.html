@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Math.random() 함수</title>
 </head>
 <body>
   <script>
     //0.0<= Math.random() <1.0
     //console.log(Math.random());
     //주사위 눈의 수(1~6)
-    let dice = Math.floor(Math.random * 6) + 1;
+    let dice = Math.floor(Math.random()* 6) + 1;
     console.log(dice);
 
     //주사위 10번 던지기
@@ -22,18 +22,13 @@
     */
 
     //1~10까지 무작위 수 생성
-    let num;
-    while(true){
-      num = Math.floor(Math.random() * 10) + 1;
-      console.log(num);
-      if(num === 10)
-        break;
-    }
+    let num = Math.floor(Math.random()*10) + 1;
+    console.log(num);
 
     //배열에서 무작위 추출
     let season = ['봄', '여름', '가을', '겨울'];
     // console.log(season[0]);  //0번
-    let rand = Math.floor(Math.random() * (season.length));
+    let rand = Math.floor(Math.random()*(season.length));
     console.log(season[rand]);  //무작위
 
 /*

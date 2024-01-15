@@ -23,6 +23,8 @@
 
   <script>
     let member = 20; //전체 응모자 수
+    
+    let winner = 4;  //당첨자 수
 
     document.write("<p>전체 응모자 수: " + member + "명</p>");
     document.write("<p>당첨자: ");
@@ -36,16 +38,12 @@
     document.write("</p>");
     */
 
-    let winner = 4;  //당첨자 수
-
     //winner명 추첨
-    for(let i=1; i<=winner; i++){
+    for(let i = 1; i <= winner; i++){
       let pickedOne = Math.floor(Math.random() * member) + 1;
       document.write(pickedOne + " 번, ");
     }
     document.write("</p>");
-
-    
 
   </script>
 </body>

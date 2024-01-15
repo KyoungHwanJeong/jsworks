@@ -14,7 +14,7 @@ function calcAge(){
       document.getElementById("print").innerHTML
         = "입력이 취소되었습니다.";
       // document.write("입력이 취소되었습니다.");
-    }else if(isNaN(birthYear)){
+    }else if(isNaN(birthYear)){         //문자를 입력했을 경우
       document.getElementById("print").innerHTML
       = "숫자를 입력해주세요.";
       // document.write("숫자를 입력해주세요.");
@@ -23,9 +23,9 @@ function calcAge(){
       // 계산
       age = CURRET_YEAR - birthYear;
 
-      document.getElementById("print").innerHTML
-      = CURRET_YEAR + "년 현재<br>" + birthYear +
-      "년에 태어난 사람의 나이는 " + age + "세입니다.";
+      document.getElementById("print").innerHTML = 
+          CURRET_YEAR + "년 현재<br>" + birthYear +
+          "년에 태어난 사람의 나이는 " + age + "세입니다.";
       /*
       document.write(CURRET_YEAR + "년 현재<br>" + birthYear +
         "년에 태어난 사람의 나이는 " + age + "세입니다.");
